@@ -1,0 +1,21 @@
+{
+  "name": "eslint-config-mapbox",
+  "version": "1.0.0",
+  "description": "A ESLint config for Mapbox JavaScript projects",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mapbox/eslint-config-mapbox.git"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "mapbox"
+  ],
+  "author": "Vladimir Agafonkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mapbox/eslint-config-mapbox/issues"
+  },
+  "homepage": "https://github.com/mapbox/eslint-config-mapbox#readme"
+}
