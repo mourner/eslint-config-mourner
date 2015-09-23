@@ -1,10 +1,12 @@
-## eslint-config-mapbox
+## eslint-config-mourner
 
-A [ESLint](http://eslint.org/) config for Mapbox JavaScript projects.
+A [ESLint](http://eslint.org/) config for my JavaScript projects.
+Meant for ES5 Node modules and libraries that use browserify.
 
 It is meant to be very strict, enforcing as many rules and conventions as possible,
-to keep our code clean, elegant and consistent across projects.
-These rules are easy to follow, so this is good for new projects,
+to keep the code clean, elegant and consistent across projects.
+
+These rules are easy to follow, so this is a good starting place for new projects,
 while being easy to disable on a case by case basis for existing projects
 if you want to enforce and fix them gradually or have justified exceptions.
 
@@ -13,14 +15,14 @@ if you want to enforce and fix them gradually or have justified exceptions.
 To use it in your project, run:
 
 ```bash
-npm install --save-dev eslint eslint-config-mapbox
+npm install --save-dev eslint eslint-config-mourner
 ```
 
 Then add a following `.eslintrc` file in the repo root:
 
 ```json
 {
-  "extends": "eslint-config-mapbox"
+  "extends": "eslint-config-mourner"
 }
 ```
 
@@ -46,9 +48,9 @@ but you can easily override any rules or options like this:
 
 ```json
 {
-  "extends": "eslint-config-mapbox",
+  "extends": "eslint-config-mourner",
   "rules": {
-    "yoda": 0,
+    "space-before-function-paren": 0,
     "indent": [2, 2]
   },
   "env": {
