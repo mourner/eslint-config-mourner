@@ -2,6 +2,12 @@
 
 A [ESLint](http://eslint.org/) config for Mapbox JavaScript projects.
 
+It is meant to be very strict, enforcing as many rules and conventions as possible,
+to keep our code clean, elegant and consistent across projects.
+These rules are easy to follow, so this is good for new projects,
+while being easy to disable on a case by case basis for existing projects
+if you want to enforce and fix them gradually or have justified exceptions.
+
 ### Install
 
 To use it in your project, run:
@@ -28,10 +34,10 @@ Finally, add `eslint` to your `npm test` script in `package.json`:
 
 Now run `npm test` and enjoy thousands of errors! :)
 
-### Fix errors
+### Automatic fixes
 
 To make things easier, you can run `eslint` with `--fix` option
-that automatically fixes a lot of errors like indentation and quotes for you.
+that automatically fixes all simple errors like indentation and quotes for you.
 
 ### Overrides
 
