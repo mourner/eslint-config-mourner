@@ -78,7 +78,6 @@ module.exports = {
     "space-infix-ops": 2,
     "space-return-throw-case": 2,
     "space-unary-ops": 2,
-    "quotes": [2, "single"],
-    "wrap-iife": 2
+    "quotes": [2, "single"]
   }
 }
