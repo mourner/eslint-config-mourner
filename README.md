@@ -1,12 +1,12 @@
 ## eslint-config-mourner
 
-A [ESLint](http://eslint.org/) config for my JavaScript projects.
-Meant for ES5 Node modules and libraries that use browserify.
+A great [ESLint](http://eslint.org/) config with sensible defaults
+that I use in [all my JavaScript projects](https://github.com/mourner/projects).
 
-It is meant to be very strict, enforcing as many rules and conventions as possible,
+It is meant to be _strict_, enforcing as many useful rules and conventions as possible
 to keep the code clean, elegant and consistent across projects.
 
-These rules are easy to follow, so this is a good starting place for new projects,
+The rules are easy to follow, so this is a good starting place for new projects,
 while being easy to disable on a case by case basis for existing projects
 if you want to enforce and fix them gradually or have justified exceptions.
 
@@ -22,19 +22,20 @@ Then add a following `.eslintrc` file in the repo root:
 
 ```json
 {
-  "extends": "eslint-config-mourner"
+  "extends": "mourner"
 }
 ```
 
-Finally, add `eslint` to your `npm test` script in `package.json`:
+Finally, add `eslint` to a `package.json` script:
 
 ```json
 "scripts": {
-  "test": "eslint index.js && tap test/test*.js",
+  "lint": "eslint index.js test/test*.js",
+  "pretest": "npm run lint"
 }
 ```
 
-Now run `npm test` and enjoy thousands of errors! :)
+Now run `npm run lint` and enjoy thousands of errors! :)
 
 ### Automatic fixes
 
