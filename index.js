@@ -10,11 +10,16 @@ module.exports = {
     "no-constant-condition": 0,
 
     // best practices
+    "accessor-pairs": 2,
+    "array-callback-return": 2,
     "consistent-return": 2,
     "dot-location": [2, "property"],
     "eqeqeq": [2, "smart"],
+    "no-caller": 2,
     "no-loop-func": 2,
+    "no-extend-native": 2,
     "no-extra-bind": 2,
+    "no-extra-label": 2,
     "no-lone-blocks": 2,
     "no-loop-func": 2,
     "no-new-wrappers": 2,
@@ -25,6 +30,7 @@ module.exports = {
     "no-sequences": 2,
     "no-void": 2,
     "no-eq-null": 2,
+    "no-unmodified-loop-condition": 2,
     "no-unused-expressions": 2,
     "no-useless-call": 2,
     "no-useless-concat": 2,
@@ -37,10 +43,12 @@ module.exports = {
     // variables
     "no-shadow-restricted-names": 2,
     "no-undef-init": 2,
+    "no-label-var": 2,
     "no-use-before-define": [2, "nofunc"],
 
     // node-related
     "callback-return": 0,
+    "global-require": 2,
     "handle-callback-err": 2,
     "no-mixed-requires": 2,
     "no-new-require": 2,
@@ -70,13 +78,11 @@ module.exports = {
     "operator-linebreak": [2, "after"],
     "semi-spacing": 2,
     "semi": 2,
-    "space-after-keywords": 2,
-    "space-before-keywords": 2,
+    "keyword-spacing": 2,
     "space-before-blocks": 2,
     "space-before-function-paren": [2, {"anonymous": "always", "named": "never"}],
     "space-in-parens": 2,
     "space-infix-ops": 2,
-    "space-return-throw-case": 2,
     "space-unary-ops": 2,
     "quotes": [2, "single"]
   }
