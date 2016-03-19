@@ -16,7 +16,6 @@ module.exports = {
     "dot-location": [2, "property"],
     "eqeqeq": [2, "smart"],
     "no-caller": 2,
-    "no-loop-func": 2,
     "no-extend-native": 2,
     "no-extra-bind": 2,
     "no-extra-label": 2,
