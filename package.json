@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-mourner",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A strict ESLint config for my JavaScript projects",
   "main": "index.js",
   "repository": {
