@@ -63,7 +63,7 @@ module.exports = {
     "comma-spacing": 2,
     "comma-style": 2,
     "eol-last": 2,
-    "indent": 2,
+    "indent": [2, 4, {"flatTernaryExpressions": true}],
     "key-spacing": 2,
     "new-cap": 2,
     "new-parens": 2,
