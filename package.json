@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/mourner/eslint-config-mourner/issues"
   },
-  "homepage": "https://github.com/mourner/eslint-config-mourner#readme"
+  "homepage": "https://github.com/mourner/eslint-config-mourner#readme",
+  "devDependencies": {
+    "eslint": "^5.4.0"
+  },
+  "eslintConfig": {
+    "extends": "./index.js"
+  },
+  "scripts": {
+    "test": "eslint index.js"
+  }
 }
