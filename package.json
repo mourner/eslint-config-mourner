@@ -2,7 +2,8 @@
   "name": "eslint-config-mourner",
   "version": "3.0.0",
   "description": "A strict ESLint config for my JavaScript projects",
-  "main": "index.js",
+  "main": "eslint.config.js",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mourner/eslint-config-mourner.git"
@@ -18,12 +19,16 @@
   },
   "homepage": "https://github.com/mourner/eslint-config-mourner#readme",
   "devDependencies": {
-    "eslint": "^5.4.0"
+    "eslint": "^9.5.0"
   },
   "eslintConfig": {
     "extends": "./index.js"
   },
   "scripts": {
-    "test": "eslint index.js"
+    "test": "eslint eslint.config.js"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.5.0",
+    "@stylistic/eslint-plugin-js": "^2.2.2"
   }
 }

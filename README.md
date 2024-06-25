@@ -18,12 +18,21 @@ To use it in your project, run:
 npm install --save-dev eslint eslint-config-mourner
 ```
 
-Then add a following `.eslintrc` file in the repo root:
+Then add a following `eslint.config.js` file in the repo root (assuming the package is `type: "module"`):
 
-```json
-{
-  "extends": "mourner"
-}
+```js
+import config from "eslint-config-mourner";
+
+export default [
+    ...config,
+
+    // your overrides if needed
+    {
+        rules: {
+            "camelcase": "warn"
+        }
+    }
+];
 ```
 
 Finally, add `eslint` to a `package.json` script:
@@ -35,27 +44,10 @@ Finally, add `eslint` to a `package.json` script:
 }
 ```
 
-Now run `npm run lint` and enjoy thousands of errors! :)
+Now run `npm run lint` and enjoy all the errors! :)
 
 ### Automatic fixes
 
 To make things easier, you can run `eslint` with `--fix` option
 that automatically fixes all simple errors like indentation and quotes for you.
 
-### Overrides
-
-Some of the rules may be too strict for your project,
-but you can easily override any rules or options like this:
-
-```json
-{
-  "extends": "eslint-config-mourner",
-  "rules": {
-    "space-before-function-paren": 0,
-    "indent": [2, 2]
-  },
-  "env": {
-    "mocha": true
-  }
-}
-```
