@@ -28,14 +28,12 @@ export default [
             'no-unmodified-loop-condition': 2,
             'no-unreachable-loop': 2,
             'no-use-before-define': [2, 'nofunc'],
-            'no-useless-assignment': 2,
             'require-atomic-updates': 2,
 
             // suggestions
             'accessor-pairs': 2,
             'arrow-body-style': 2,
             'camelcase': 2,
-            'class-methods-use-this': 2,
             'consistent-return': 2,
             'dot-notation': 2,
             'eqeqeq': [2, 'smart'],
