@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/mourner/eslint-config-mourner#readme",
   "devDependencies": {
-    "eslint": "^9.5.0"
+    "eslint": "^9.6.0"
   },
   "eslintConfig": {
     "extends": "./index.js"
@@ -28,7 +28,8 @@
     "test": "eslint eslint.config.js"
   },
   "dependencies": {
-    "@eslint/js": "^9.5.0",
-    "@stylistic/eslint-plugin-js": "^2.2.2"
+    "@eslint/js": "^9.6.0",
+    "@stylistic/eslint-plugin-js": "^2.3.0",
+    "globals": "^15.8.0"
   }
 }
