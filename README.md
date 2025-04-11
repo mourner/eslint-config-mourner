@@ -15,25 +15,10 @@ if you want to enforce and fix them gradually or have justified exceptions.
 To use it in your project, run:
 
 ```bash
-npm install --save-dev eslint eslint-config-mourner
+npm init @eslint/config@latest -- --config eslint-config-mourner
 ```
 
-Then add a following `eslint.config.js` file in the repo root (assuming the package is `type: "module"`):
-
-```js
-import config from "eslint-config-mourner";
-
-export default [
-    ...config,
-
-    // your overrides if needed
-    {
-        rules: {
-            "camelcase": "warn"
-        }
-    }
-];
-```
+Which will add a `eslint.config.[js|mjs]` file in the repo root.
 
 Finally, add `eslint` to a `package.json` script:
 
