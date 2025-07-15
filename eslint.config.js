@@ -1,6 +1,6 @@
 import globals from 'globals';
 import js from '@eslint/js';
-import stylisticJs from '@stylistic/eslint-plugin-js';
+import stylisticJs from '@stylistic/eslint-plugin';
 
 export default [
     js.configs.recommended,
@@ -10,11 +10,11 @@ export default [
                 ...globals.browser,
                 ...globals.node,
             },
-            ecmaVersion: 2020,
+            ecmaVersion: 'latest',
             sourceType: 'module',
         },
         plugins: {
-            '@stylistic/js': stylisticJs
+            '@stylistic': stylisticJs
         },
         rules: {
             // possible problems
@@ -86,42 +86,42 @@ export default [
             'yoda': 2,
 
             // stylistic
-            '@stylistic/js/indent': [2, 4, {flatTernaryExpressions: true}],
-            '@stylistic/js/array-bracket-spacing': 2,
-            '@stylistic/js/arrow-parens': [2, 'as-needed', {requireForBlockBody: true}],
-            '@stylistic/js/arrow-spacing': 2,
-            '@stylistic/js/block-spacing': 2,
-            '@stylistic/js/brace-style': [2, '1tbs', {allowSingleLine: true}],
-            '@stylistic/js/comma-spacing': 2,
-            '@stylistic/js/comma-style': 2,
-            '@stylistic/js/computed-property-spacing': 2,
-            '@stylistic/js/dot-location': [2, 'property'],
-            '@stylistic/js/eol-last': 2,
-            '@stylistic/js/function-call-spacing': 2,
-            '@stylistic/js/key-spacing': 2,
-            '@stylistic/js/keyword-spacing': 2,
-            '@stylistic/js/new-parens': 2,
-            '@stylistic/js/no-mixed-spaces-and-tabs': 2,
-            '@stylistic/js/no-trailing-spaces': 2,
-            '@stylistic/js/no-whitespace-before-property': 2,
-            '@stylistic/js/object-curly-spacing': 2,
-            '@stylistic/js/operator-linebreak': [2, 'after'],
-            '@stylistic/js/quotes': [2, 'single'],
-            '@stylistic/js/linebreak-style': [2, 'unix'],
-            '@stylistic/js/semi': [2, 'always'],
-            '@stylistic/js/semi-spacing': 2,
-            '@stylistic/js/generator-star-spacing': 2,
-            '@stylistic/js/rest-spread-spacing': 2,
-            '@stylistic/js/yield-star-spacing': 2,
-            '@stylistic/js/template-tag-spacing': 2,
-            '@stylistic/js/no-confusing-arrow': 2,
-            '@stylistic/js/implicit-arrow-linebreak': 2,
-            '@stylistic/js/space-before-blocks': 2,
-            '@stylistic/js/space-before-function-paren': [2, {anonymous: 'always', named: 'never'}],
-            '@stylistic/js/space-in-parens': 2,
-            '@stylistic/js/space-infix-ops': 2,
-            '@stylistic/js/space-unary-ops': 2,
-            '@stylistic/js/switch-colon-spacing': 2
+            '@stylistic/indent': [2, 4, {flatTernaryExpressions: true}],
+            '@stylistic/array-bracket-spacing': 2,
+            '@stylistic/arrow-parens': [2, 'as-needed', {requireForBlockBody: true}],
+            '@stylistic/arrow-spacing': 2,
+            '@stylistic/block-spacing': 2,
+            '@stylistic/brace-style': [2, '1tbs', {allowSingleLine: true}],
+            '@stylistic/comma-spacing': 2,
+            '@stylistic/comma-style': 2,
+            '@stylistic/computed-property-spacing': 2,
+            '@stylistic/dot-location': [2, 'property'],
+            '@stylistic/eol-last': 2,
+            '@stylistic/function-call-spacing': 2,
+            '@stylistic/key-spacing': 2,
+            '@stylistic/keyword-spacing': 2,
+            '@stylistic/new-parens': 2,
+            '@stylistic/no-mixed-spaces-and-tabs': 2,
+            '@stylistic/no-trailing-spaces': 2,
+            '@stylistic/no-whitespace-before-property': 2,
+            '@stylistic/object-curly-spacing': 2,
+            '@stylistic/operator-linebreak': [2, 'after'],
+            '@stylistic/quotes': [2, 'single'],
+            '@stylistic/linebreak-style': [2, 'unix'],
+            '@stylistic/semi': [2, 'always'],
+            '@stylistic/semi-spacing': 2,
+            '@stylistic/generator-star-spacing': 2,
+            '@stylistic/rest-spread-spacing': 2,
+            '@stylistic/yield-star-spacing': 2,
+            '@stylistic/template-tag-spacing': 2,
+            '@stylistic/no-confusing-arrow': 2,
+            '@stylistic/implicit-arrow-linebreak': 2,
+            '@stylistic/space-before-blocks': 2,
+            '@stylistic/space-before-function-paren': [2, {anonymous: 'always', named: 'never'}],
+            '@stylistic/space-in-parens': 2,
+            '@stylistic/space-infix-ops': 2,
+            '@stylistic/space-unary-ops': 2,
+            '@stylistic/switch-colon-spacing': 2
         }
     }
 ];
