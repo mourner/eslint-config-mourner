@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-mourner",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "description": "A strict ESLint config for my JavaScript projects",
   "main": "eslint.config.js",
   "type": "module",
