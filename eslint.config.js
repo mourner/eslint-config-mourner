@@ -80,7 +80,7 @@ export default [
             'yoda': 2,
 
             // stylistic
-            '@stylistic/indent': [2, 4, {flatTernaryExpressions: true}],
+            '@stylistic/indent': [2, 4, {flatTernaryExpressions: true, SwitchCase: 0}],
             '@stylistic/array-bracket-spacing': 2,
             '@stylistic/arrow-parens': [2, 'as-needed', {requireForBlockBody: true}],
             '@stylistic/arrow-spacing': 2,
