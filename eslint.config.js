@@ -17,6 +17,9 @@ export default [
             '@stylistic': stylisticJs
         },
         rules: {
+            // disable because they are net-negative for my style
+            'no-useless-assignment': 0,
+
             // possible problems
             'array-callback-return': 2,
             'no-await-in-loop': 2,
